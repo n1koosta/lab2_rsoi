@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./stylelab8.css">
+    <script src="jquery-1.11.2.min.js"></script>
+    <script src="javascript.js"></script>
+</head>
+
+<body>
+    <div class="block">
+        <h1>Здравствуйте! Заполните форму!</h1>
+        <input type="text" class="inputcss" id="in1" placeholder="ФИО руководителя">
+        <br>
+        <input type="text" class="inputcss" id="in2" placeholder="Укажите номер класса">
+        <br>
+        <input type="text" class="inputcss" id="in3" placeholder="Кол-во учащихся в классе">
+        <br>
+        <br> <h2>Выберите параллель</h2> 
+        <input type="radio" name="group1" value="А" checked> А
+        <input type="radio" name="group1" value="Б"> Б
+        <br>
+        <select class="inputcss" id="select">
+        </select>
+        <br>
+        <br>
+        <input type="submit" class="button8" id="btn1" value="добавить запись" onclick="add()">
+        <input type="submit" class="button8" id="btn2" value="очистить формы" onclick="clean()">
+        <input type="submit" class="button8" id="btn3" value="удалить запись" onclick="deleteFromFlats()">
+        <input type="submit" class="button8" id="btn4" value="Показать все" onclick="show()">
+        <input type="submit" class="button8" id="btn5" value="самый маленький класс" onclick="minArea()">
+    </div>
+<br>
+    <div  id="hidden"></div>
+    <br>
+    <div  id="hidden2"></div>
+</body>
+
+</html>
